@@ -68,6 +68,11 @@ abline(headlen)
 summary.lm(headlen)
 ```
 
+
+
+## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
+
+
 Here is the order from worst to best based on different variables correlated to the length of a bear by their standard error and their adjusted R- squared 
 
 First, Length~Age: Residual standard error: 7.5 on 52 degrees of freedom, adjusted R- squared: 0.50
@@ -84,5 +89,4 @@ Sixth, Length~Headlen: Residual standard error: 4.235 on 52 degrees of freedom,
 adjusted R- squared: 0.8434
 
 
-## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
