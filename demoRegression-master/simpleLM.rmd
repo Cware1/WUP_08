@@ -28,5 +28,61 @@ summary.lm(simp)
 ```
 
 
+```{r}
+age <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(age)
+summary.lm(age)
+```
+
+
+
+
+```{r}
+width <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(width)
+summary.lm(width)
+```
+
+
+```{r}
+weight <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(weight)
+summary.lm(weight)
+```
+
+```{r}
+chest <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(chest)
+summary.lm(chest)
+```
+
+
+```{r}
+headlen <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(headlen)
+summary.lm(headlen)
+```
+
+Here is the order from worst to best based on different variables correlated to the length of a bear by their standard error and their adjusted R- squared 
+
+First, Length~Age: Residual standard error: 7.5 on 52 degrees of freedom, adjusted R- squared: 0.50
+
+Second, Length~Headwth: Residual standard error: 7.3 on 52 degrees of freedom, adjusted R- squared: 0.5321
+
+Third, Length~Weight: Residual standard error: 5.4 on 52 degrees of freedom, adjusted R- squared: 0.7
+
+fourth, Length~Neck: Residual standard error: 5.376 on 52 degrees of freedom, adjusted R- squared: 0.7476
+
+Fifth, Length~Chest: Residual standard error: 4.939 on 52 degrees of freedom, adjusted R- squared: 0.791, adjusted R- squared: 0.7869
+
+Sixth, Length~Headlen: Residual standard error: 4.235 on 52 degrees of freedom, 
+adjusted R- squared: 0.8434
+
+
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
